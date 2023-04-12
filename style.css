@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+
+   margin: 0; padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+.container{
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding:20px;
+   padding-bottom: 60px;
+   background: rgb(20, 20, 67);
+   background-size: cover;
+   background-position: center;
+}
+
+.container .content{
+   text-align: center;
+}
+
+
+
+.container .content h1{
+   font-size: 50px;
+   color: white;
+}
+
+.container .content h1 span{
+   color: orange;
+}
+
+.container .content p{
+   font-size: 25px;
+   margin-bottom: 20px;
+   text-transform: lowercase;
+   color: white;
+}
+
+.container .content .btn{
+   display: inline-block;
+   padding:10px 30px;
+   font-size: 20px;
+   background: black;
+   color:#fff;
+   margin:0 5px;
+   text-transform: capitalize;
+   border-radius: 15px;
+}
+
+.container .content .btn:hover{
+   background: white;
+   color: black;
+}
+
+.hform-container{
+   width: 70%;
+   max-width: 350px;
+   position: absolute;
+   top: 60%;
+   left: 140%;
+   transform: translate(-50%,-50%);
+   padding: 10px 50px 50px;
+   text-align: center;
+   box-sizing: border-box;
+   border-radius: 15px;
+}
+
+.hform-container form{
+   padding:20px;
+   border-radius: 5px;
+   box-shadow: 0 5px 10px rgba(0,0,0,.1);
+   background: rgba(197, 184, 184, 0.296);
+   text-align: center;
+   width: 350px;
+}
+
+.hform-container form h3{
+   font-size: 40px;
+    margin-bottom: 40px;
+    color: orange;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.hform-container form input,
+.hform-container form select{
+   width: 80%;
+   padding:10px 15px;
+   font-size: 17px;
+   margin:8px 0;
+   background: #eee;
+   text-transform: lowercase;
+}
+
+.hform-container form select option{
+   background: #fff;
+}
+
+.hform-container form .form-btn{
+   background: orange;
+   color: white;
+   text-transform: capitalize;
+   font-size: 20px;
+   cursor: pointer;
+}
+
+.hform-container form .form-btn:hover{
+   background: white;
+   color: orange;
+}
+
+.hform-container form p{
+   margin-top: 10px;
+   font-size: 20px;
+   color: black;
+   line-height: 40px;
+}
+
+.hform-container form p a{
+   color: white;
+}
+
+.hform-container form .error-msg{
+   margin:10px 0;
+   display: block;
+   background: white;
+   color: red;
+   border-radius: 5px;
+   font-size: 20px;
+   padding:10px;
+}
+
+.form-container{
+   width: 70%;
+   max-width: 350px;
+   position: absolute;
+   top: 60%;
+   left: 140%;
+   transform: translate(-50%,-50%);
+   padding: 10px 50px 50px;
+   text-align: center;
+   box-sizing: border-box;
+   border-radius: 15px;
+}
+
+.form-container form{
+   padding:20px;
+   border-radius: 5px;
+   box-shadow: 0 5px 10px rgba(0,0,0,.1);
+   background: rgba(197, 184, 184, 0.296);
+   text-align: center;
+   width: 385px;
+}
+
+.form-container form h3{
+   font-size: 30px;
+   text-transform: uppercase;
+   margin-bottom: 10px;
+   color: orange;
+}
+
+.form-container form input,
+.form-container form select{
+   width: 100%;
+   padding:10px 15px;
+   font-size: 17px;
+   margin:8px 0;
+   background: #eee;
+   text-transform: lowercase;
+}
+
+.form-container form select option{
+   background: #fff;
+}
+
+.form-container form .form-btn{
+   background: orange;
+   color: white;
+   text-transform: capitalize;
+   font-size: 20px;
+   cursor: pointer;
+}
+
+.form-container form .form-btn:hover{
+   background: white;
+   color: orange;
+}
+
+.form-container form p{
+   margin-top: 10px;
+   font-size: 20px;
+   color: black;
+   line-height: 40px;
+}
+
+.form-container form p a{
+   color: white;
+}
+
+.form-container form .error-msg{
+   margin:10px 0;
+   display: block;
+   background: white;
+   color: red;
+   border-radius: 5px;
+   font-size: 20px;
+   padding:10px;
+}
+
+html{
+   font-size: 62.5%;
+   scroll-behavior: smooth;
+   scroll-padding-top: 6rem;
+   overflow-x: hidden;
+}
+
+section{
+   padding: 2rem 9%;
+}
+
+header{
+   position: fixed;
+   top: 0; left: 0; right: 0;
+   background: rgb(12, 12, 69);
+   padding:2rem 8%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   z-index: 1000;
+   box-shadow: 0.5rem 1rem rgba(0,0,0,.1);
+}
+
+header .logo{
+   font-size: 3rem;
+   color: #fff;
+   font-weight: bolder;
+}
+
+header .logo span{
+   color: white;
+}
+
+header .aunavbar a{
+   font-size: 2rem;
+   padding: 0 22rem;
+   color: #fff;
+}
+
+header .aunavbar a:hover{
+   color: orange;
+}
+
+header .navbar a{
+   font-size: 2rem;
+   padding: 0 15rem;
+   color: #fff;
+}
+
+header .navbar a:hover{
+   color: orange;
+}
+
+header .logo span:hover{
+   color: orange;
+}
+
+header .logo a:hover{
+   color: orange;
+}
+
+header #toggler{
+   display: none;
+}
+
+header .fa-bars{
+   font-size: 3rem;
+   color: #333;
+   border-radius: .5rem;
+   padding: .5rem 1.5rem;
+   cursor: pointer;
+   border: .1rem solid rgba(0,0,0,.3);
+   display: none;
+}
+
+.home{
+   display: flex;
+   align-items: center;
+   min-height: 100vh;background: url(website.webp) no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+
+.home .hcontent{
+   max-width: 50rem;
+}
+
+.hcontent{
+   width: 1200px;
+   height: auto;
+   margin: auto;
+   color: white;
+   position: relative;
+}
+
+.hcontent .par{
+   padding-left: -60%;
+   padding-bottom: 25px;
+   font-family: arial;
+   letter-spacing: 1.2px;
+   line-height: 30px;
+   font-size: 13px;
+}
+
+.hcontent h1{
+   font-family: 'Times New Roman';
+   font-size: 50px;
+   margin-left: -1%;
+   margin-top: 9%;
+   letter-spacing: 2px;
+
+}
+
+.hcontent span{
+   color: orange;
+   font-size: 60px;
+
+}
+
+.heading{
+   text-align: center;
+   font-size: 4rem;
+   color: orange;
+   
+   padding: 1rem;
+   margin: 2rem 0;
+   background: rgb(12, 12, 69);
+}
+
+.heading span{
+   color: white ;
+}
+
+.about{
+   align-items: center;
+   min-height: 100vh;
+}
+
+
+.about .row{
+   display: flex;
+   align-items: center;
+   gap: 2rem;
+   flex-wrap: wrap;
+   padding: 2rem 0;
+   padding-bottom: 3rem;
+}
+
+.about .row .video-container{
+   flex: 1 1 40rem;
+   position: relative;
+   margin-top: 7%;
+}
+
+.about .row .video-container video{
+   width: 100%;
+   border: 1.5rem solid #efb20a;
+   border-radius: .5rem;
+   box-shadow: 0 .5rem 1rem rgba(108, 79, 15, 0.933);
+   height: 100%;
+   object-fit: cover;
+}
+
+
+.about .row .content{
+   flex: 1 1 40rem;
+}
+
+
+
+.about .row .content p{
+   font-size: 20px;
+   color: #000;
+   padding: 5rem 0rem 1rem;
+   padding-top: 1rem;
+   line-height: 2;
+   font-family: 'Times New Roman', Times, serif ;
+   font-weight: bold;
+   margin-top: 12%;
+}
+
+.contact{
+   
+   font-family: 'Poppins', sans-serif;
+   align-items: center;
+   min-height: 100vh;
+   box-sizing: border-box;
+   border: none;
+}
+
+
+.ccontent{
+   display: flex;
+   min-height: 100vh;
+   font-size: 60px;
+    margin-bottom: 40px;
+    color: black;
+    position: relative;
+}
+.ccontent section{
+   margin-top: 7%;
+   margin-left: 40vh;
+   background: #fff;
+    border: 1rem solid rgba(0, 0, 0, .1);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    flex: 1 1 25rem;
+}
+.ccontent .ccontent-form{
+   margin-top: -3%;
+   font-size: 13px;
+   font-family: arial;
+   line-height: 25px;
+   letter-spacing: 1px;
+}
+
+.ccontent .ccontent-form p{
+   padding-left: 12%;
+   padding-bottom: 5px;
+   width: 60vh;
+   height: 8vh;
+   font-weight: 550;
+   text-transform:uppercase;
+   text-decoration:underline;
+}
+
+.ccontent .ccontent-form h2{
+   font-weight: bolder;
+   
+}
+
+section i{
+   border-radius: 50%;
+   width: 40px;
+   height: 40px;
+   background-color: #efb20a;
+   color: black;
+   text-align: center;
+}
+
+
+footer{
+   font-size: 18px;
+   background-color: rgba(197, 184, 184, 0.674);
+   line-height: 1cm;
+}
+
+.links{
+   line-height: 90px;
+   font-size: 30px;
+   align-items: center;
+}
+
